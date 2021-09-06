@@ -1,23 +1,19 @@
 
- const ELEMENT = document.querySelector('#selectme')
- ELEMENT.innerHTML = "This is js"
-
- ELEMENT.style.color ="cyan"
- ELEMENT.style.fontSize ="40px"
-//  ELEMENT.style = 'display:none'
-
-
-const b = document.querySelector('#SelectMe')
-console.log(b.classList)
-b.classList.add('five')
-console.log(b.classList)
-b.classList.remove('one')
-console.log(b.classList)
-
+// EVENT LISTENERS: 
+const button=document.querySelector('button')
+const element=document.querySelector('#selectme')
 const body = document.querySelector('body')
-console.log(body.classList.toggle('dark'))
 
+console.log(button,element)
 
-//to check if element has a particular class or not 
-const value= ELEMENT.classList.contains('one') //conayins return =s a boolean value
-console.log(value)
+button.addEventListener('click',()=>{
+    // element.style="background:aqua"
+    console.log("Heya! you just changed the color")
+    body.classList.toggle('dark')
+    // if(element.classList.contains('aqua')){
+    //     element.classList.remove('aqua')
+    // }else{
+    //     element.classList.add('aqua')
+    // }
+})
+//it listens for an event
