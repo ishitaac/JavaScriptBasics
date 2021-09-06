@@ -1,8 +1,23 @@
-console.log("Hey this is my frist piece of JS code!")
-console.log(123424.5)
-console.log({name:"yutika"})  //we can add an onject to the console
-console.log(true)
-console.log(false,56,'string',{name:"sakshi"})
-console.warn("this is a warning!")
-console.error("this is an error!")
-console.table({name:"Harry", language:"JavaScript", tutorial:2})
+const element = document.getElementById('selectme')
+console.log(element)
+console.log(typeof element)
+
+const elements = document.getElementsByClassName('heading')
+console.log(elements)   //in class DOM shows the output of class as an array of elements/objects and not as a single object
+
+const tags=document.getElementsByTagName('div') //going to return a array of objects
+console.log(tags)
+
+// const _element = document.querySelector('div#selectme')
+const _element = document.querySelector('.heading')
+console.log(_element)
+
+//query selector always returns one element
+const __element = document.querySelector('h3.heading')
+console.log(__element)
+
+
+//To get all the elements of the class 'heading' using query selector we get use:-
+ const a= document.querySelectorAll('.heading')
+ console.log(a)
+ console.log(typeof a)
