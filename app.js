@@ -1,8 +1,33 @@
-console.log("Hey this is my frist piece of JS code!")
-console.log(123424.5)
-console.log({name:"yutika"})  //we can add an onject to the console
-console.log(true)
-console.log(false,56,'string',{name:"sakshi"})
-console.warn("this is a warning!")
-console.error("this is an error!")
-console.table({name:"Harry", language:"JavaScript", tutorial:2})
+// const rock = document.querySelector('#rock')
+// const paper = document.querySelector('#paper')
+// const scissor = document.querySelector('#scissor')
+
+// FUNCTIONS
+
+// function logName(){
+//     console.log("Nishtha")
+// }
+// logName()
+
+function logName(Name="John Doe" , age="18"){
+    console.log(Name+" you are "+age+" years old.")
+}
+logName("Nishtha", "21")
+
+//never misspell thr function keyword
+//a function can have multiple parameters
+//you can set default values for tthe parameters, like below:
+function logName(Name="John Doe" , age="18"){
+    console.log(Name+" you are "+age+" years old.")
+}
+logName()
+
+//any function you define inside a function's body will be local to that function
+function add(a=0,b=0){
+    // const sum=a+b
+    // return sum
+    return a+b
+}
+console.log(add(3,7))
+// const result =add(3,7)
+// console.log(result)
