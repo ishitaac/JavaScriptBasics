@@ -1,8 +1,28 @@
-console.log("Hey this is my frist piece of JS code!")
-console.log(123424.5)
-console.log({name:"yutika"})  //we can add an onject to the console
-console.log(true)
-console.log(false,56,'string',{name:"sakshi"})
-console.warn("this is a warning!")
-console.error("this is an error!")
-console.table({name:"Harry", language:"JavaScript", tutorial:2})
+//FOR LOOP
+// let i
+
+for(var i=1;i<10;i++){
+    console.log(i)
+}
+
+//let has a block scope while var has a global scope. We get refrence error comes up when let is used
+console.log(i)
+
+// const temp = ()=>{
+//     var dontknow="dontknow"
+// }
+// console.log(dontknow)  //scope of var, let and comst gets  limited  the block of function when used inside a function.
+
+
+//WHILE LOOP
+
+// let condition = true
+// while(condition){
+//     console.log()
+// }
+
+let iteration=0
+while(iteration<10){
+    console.log(iteration)
+    iteration++
+}
